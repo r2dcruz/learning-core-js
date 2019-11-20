@@ -179,8 +179,117 @@ console.log('should be true', outputTrue);
 var outputFalse = areNotEqual(7, 3 + 4);
 console.log('should be false:', outputFalse);
 
+//***********************************
+//17) Using the '+' operator with numbers
 
+function getSum(num1, num2) {
+  var sum = num1 + num2;
+  return sum;
+}
 
+var resultSum = getSum(4,10);
+console.log('should be 14: ', resultSum);
+
+//***********************************
+//18) Using the '-' operator with numbers
+
+function getDifference (num1, num2) {
+  var result = num1 - num2;
+  return result;
+}
+
+var resultDiff = getDifference(37,19);
+console.log('should be 18: ', resultDiff);
+
+//***********************************
+//19) Using the '*' operator with numbers
+
+function getProduct(num1, num2) {
+  var sum = num1 * num2;
+  return sum;
+}
+
+var resultProduct = getProduct(9, 4);
+console.log('should be 36: ', resultProduct);
+
+//***********************************
+//20) Using the '/' operator with numbers
+
+function getquotient(num1, num2) {
+  var result = num1 / num2;
+  return sum;
+}
+
+var resultQuotient = getQuotient(20, 4);
+console.log('should be 5: ', resultQuotient);
+
+//***********************************
+//21) Using the '**' operator with numbers
+
+function getPower(num1, num2) {
+  var result = num1 ** num2;
+  return result;
+}
+
+var resultPower = getPower(3, 4);
+console.log('should be 81: ', resultPower);
+
+//***********************************
+//22) Using the '%' operator with numbers
+
+function getRemainder(num1, num2) {
+  var result = num1 % num2;
+  return result;
+}
+
+var resultRemainder = getRemainder(21, 6);
+console.log('should be 3: ' resultRemainder);
+
+//***********************************
+//23) Using the '+=' operator
+
+function increment (base, incrementer) {
+  var result = base += incrementer;
+  return result;
+}
+
+var resultIncremented = increment(11, 5);
+console.log('should be 16: ', resultIncremented);
+
+//***********************************
+//24) Using the '-=' operator
+
+function decrement(base, incrementer) {
+  var result = base -= decrementer;
+  return result;
+}
+
+var resultDecremented = decrement(17, 5);
+console.log('should be 12: ', resultDecremented);
+
+//***********************************
+//25) Using the '*=' operator
+function applyTimesEquals(base, multiplier) {
+  var result = base *= multiplier;
+  return result;
+}
+
+var resultMultiplied = applyTimesEquals(3, 5);
+console.log('should be 15: ', resultMultiplied);
+
+//***********************************
+//26) Using the '/=' operator
+
+function applyDivideEquals(base, divider) {
+  var result = base /= divider;
+  return result;
+}
+
+var resultDivided = applyDivideEquals(56, 7);
+console.log('should be 8: ', resultDivided);
+
+//***********************************
+//
 
 
 
