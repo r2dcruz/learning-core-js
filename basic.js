@@ -289,10 +289,122 @@ var resultDivided = applyDivideEquals(56, 7);
 console.log('should be 8: ', resultDivided);
 
 //***********************************
-//
+//27) Using the 'Math.abs()' method
 
+function getAbsoluteValule(num) {
+  var result = Math.abs(num);
+  return result;
+}
 
+var result1 = getAbsoluteValule(-53);
+console.log('should be 56: ', result1);
 
+var result2 = getAbsoluteValule(127);
+console.log('should be 127: ', result2);
+
+//***********************************
+//28) Using the 'Math.floor()' method
+
+function roundDown(num) {
+  var result = Math.floor(num);
+  return result;
+}
+
+var roundedDown = roundDown(6.8);
+console.log('should be 6: ', roundedDown);
+
+//***********************************
+//29) Using the 'Math.ceil()' method
+
+function roundUp(num) {
+  var result = Math.ceil(num);
+  return result;
+}
+
+var roundedUp = roundUp(16.8)
+console.log('should be 17:', roundedUp)
+
+//***********************************
+//30) Using the 'Number.parseInt()' method
+
+function applyParseInt(numString) {
+  var result = Number.parseInt(numString);
+  return result;
+}
+
+var parsedInteger = applyParseInt('23');
+console.log('should be 23: ', parsedInteger);
+
+//***********************************
+//31) Using the 'Number.parseFloat()' method
+
+function applyParseFloat(numString) {
+  var result = Number.parseFloat(numString);
+  return result;
+}
+
+var parsedFloat = applyParseFloat('101.78');
+console.log('should be 101.78: ', parsedFloat);
+
+//***********************************
+//32) Using the 'Math.random()' method
+
+function generateRandomNumber(min, max) {
+  var result = Math.random() * (max - min) + min;
+  return result;
+}
+
+var randomNumber = generateRandomNumber(1, 10);
+console.log('should be between 1 and 10: ', randomNumber);
+
+//***********************************
+//33) Using the '>' operator
+
+function applyGreaterThan(num1, num2) {
+  var result = num1 > num2;
+  return result;
+}
+
+var trueGreaterThanResult = applyGreaterThan(101, 10);
+console.log('should be true: ', trueGreaterThanResult);
+
+var falseGreaterThanResult = applyGreaterThan(-13, 2);
+console.log('should be false: ', falseGreaterThanResult);
+
+//***********************************
+//34) Using the '<=' operator
+function applyLessThanOrEqualTo(num1, num2) {
+  var result = num1 <= num2;
+  return result;
+}
+
+var trueLessThanOrEqualToResult = applyLessThanOrEqualTo(11, 110);
+console.log('should be true: ', trueLessThanOrEqualToResult);
+
+var falseLessThanOrEqualToResult = applyLessThanOrEqualTo(-13, -21);
+console.log('should be false: ', falseLessThanOrEqualToResult);
+
+//***********************************
+//35) Creating a string
+
+function createString() {
+  var result = 'string';
+  return result;
+}
+
+var resultString = createString();
+console.log('should be a string type: ', resultString);
+
+//***********************************
+//36) Accessing a Character in a string
+
+function accessACharacter(string, index) {
+  var result = string[index];
+  return result;
+}
+
+var resultCharacter = accessACharacter('Computer', 3);
+console.log('should be \'p\': ' resultCharacter);
 
 
 
