@@ -406,6 +406,156 @@ function accessACharacter(string, index) {
 var resultCharacter = accessACharacter('Computer', 3);
 console.log('should be \'p\': ' resultCharacter);
 
+//***********************************
+//37) Reassigning a String's Value
+
+function reassignAString(string) {
+  string = 'reassigned';
+  return string;
+}
+
+var resultString1 = reassignAString('Computer Science');
+console.log('should be "reassigned": ',resultString1 );
+
+var resultString2 = reassignAString('Software Engineering');
+console.log('should also be "reassigned":', resultString2);
+
+//***********************************
+//38) Concatenate two strings
+function addTogetherTwoStrings(string1, string2) {
+  var result = string1 + string2;
+  return result;
+}
+
+var resultString1 = addTogetherTwoStrings('Comp', 'uter');
+console.log('should be "Computer":', resultString1);
+
+var resultString2 = addTogetherTwoStrings('Engin', 'eering');
+console.log('should also be "Engineering":', resultString2);
+
+//***********************************
+//39) Concatenate two strings into a full name
+
+function createFullName(firstName, lastName) {
+  var fullName = firstName + ' ' + lastName;
+  return fullName;
+}
+
+var resultFullName1 = createFullName('Duevyn', 'Cooke');
+console.log('should log Duevyn Cooke:', resultFullName1);
+
+var resultFullName2 = createFullName('Ada', 'Lovelace');
+console.log('should log Ada Lovelace:', resultFullName2);
+
+//***********************************
+//40)String Interpolation
+
+function interpolateAString(activity, dayOfTheWeek) {
+  var result = 'We will go ' + activity + ' on ' + dayOfTheWeek + '.';
+  return result;
+}
+
+var resultMessage1 = interpolateAString('hiking', 'Tuesday');
+console.log('Should log "We will go hiking on tuesday.": ', resultMessage1);
+
+var resultMessage2 = interpolateAString('dancing', 'Friday');
+console.log('Should log "We will go dancing on Friday.": ', resultMessage2);
+
+//***********************************
+//41) Get length of string
+function getStringLength (string) {
+  var length;
+  length = string.length;
+  return length;
+}
+
+var resultLength1 = getStringLength('Apple');
+console.log('should log 5: ', resultLength1);
+
+var resultLength2 = getStringLength('Microsoft');
+console.log('should log 9: ', resultLength2);
+
+//***********************************
+//42) Get last character of string
+function getLastCharacter (string) {
+  var lastIndex = string.length;
+  var lastCharacter = string[lastIndex - 1];
+  return lastCharacter;
+}
+
+var resultLastCharacter1 = getLastCharacter('Banana');
+console.log('should log "a": ', resultLastCharacter1);
+
+var resultLastCharacter2 = getLastCharacter('Macrofirm');
+console.log('should log "m": ', resultLastCharacter2);
+
+//***********************************
+//43) Apply substring method
+
+function applySubString(string, start, end) {
+  var subString = string.substring(start, end);
+  return subString;
+}
+
+var string1 = 'Queue';
+var resultSubstring1 = applySubString(string1, 1, 4);
+console.log('should log "ueu": ', resultSubstring1);
+
+var string2 = 'Stack Trace';
+var resultSubstring2 = applySubString(string2, 2, 10);
+console.log('should log "ack Trac": ', resultSubstring2);
+
+//***********************************
+//44) Apply indexOf Method
+
+function applyIndexOf(string, substring){
+  var indexVariable = string.indexOf(subString);
+  return indexVariable;
+}
+
+var string1 = 'Quicksort';
+var subString1 = 'sort';
+var resultIndex1 = applyIndexOf(string1, subString1);
+console.log('should log 5: ', resultIndex1);
+
+var string2 = 'size,color,cut,price';
+var subString2 = 'cut';
+var resultIndex2 = applyIndexOf(string2, subString2);
+console.log('should log 11: ', resultIndex2);
+
+//***********************************
+//45) Apply toString Method
+
+function applyToString(param) {
+  var stringVersion = param.toString();
+  return stringVersion;
+}
+
+var input1 = 9374;
+var resultString1 = applyToString(input1);
+console.log('should log "9374": ', resultString1);
+console.log('type should be "string": ', typeof resultString1);
+
+var input2 = false;
+var resultString2 = applyToString(input2);
+console.log('should log "false": ', input2);
+console.log('type should be "string": ', typeof resultString2);
+
+//***********************************
+//46) Using Escape Characters
+
+function generateHaiku(firstLine, secondLine, thirdLine) {
+  var haiku = firstLine + '\n' + secondLine + '\n' + thirdLine;
+  return haiku;
+}
+
+var resultHaiku1 = generateHaiku('In the twilight rain', 'these brillant-hued hibiscus -', 'A lovely sunset.');
+console.log('should log formatted haiku:\n', resultHaiku1);
+
+var resultHaiku2 = generateHaiku('The lamp once out', 'Moves west, flowers\ shadows', 'Creep eastward.');
+console.log('should log formatted haiku:\n', resultHaiku2);
+
+
 
 
 
