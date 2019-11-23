@@ -555,12 +555,133 @@ console.log('should log formatted haiku:\n', resultHaiku1);
 var resultHaiku2 = generateHaiku('The lamp once out', 'Moves west, flowers\ shadows', 'Creep eastward.');
 console.log('should log formatted haiku:\n', resultHaiku2);
 
+//***********************************
+//47)Creating an Array
+
+function createArray() {
+  var result = [];
+  return result;
+}
+
+var resultArray = createArray();
+console.log('Should be an array: ', resultArray);
+
+//***********************************
+//48) Accessing an Element in an Array
+function accessingAnElemnent(array, index) {
+  var result = array[index];
+  return result;
+}
+
+var resultElement = accessingAnElemnent(['Computer', 'Mouse', 'Ethernet Cable'], 1);
+console.log('Should be "Mouse": ', resultElement);
 
 
+//***********************************
+//49) Reassigning an Element in an Array
+function reassigningAnElement(array, index, newValue) {
+  var newArray = array[index] = newValue;
+  return newArray;
+}
 
+var resultArray = reassigningAnElement(['desk', 'lamp', 'chewtoy'], 2, 'textbook');
+console.log('should replace chewtoy with textbook: ', resultArray);
 
+//***********************************
+//50) Get length of an Array
 
+function getArrayLength(array) {
+  var length = array.length;
+  return length;
+}
 
+var resultLength1 = getArrayLength([1, 3, 4, 5, 7]);
+console.log('should log 5:', resultLength1);
+
+var resultLength2 = getArrayLength(['a', 'b', 'c', 'd']);
+console.log('should log 4:', resultLength2);
+
+//***********************************
+//51) Get last element of array
+function getLastElement(array) {
+  var result = array[array.length - 1];
+  return result;
+}
+
+var resultLastElement1 = getLastElement([1, 2, "buckle", "my", "shoe"]);
+console.log('should log "shoe":', resultLastElement1);
+
+var resultLastElement2 = getLastElement([3, 4, "shut", "the", "door"]);
+console.log('should log "door":', resultLastElement2);
+
+//***********************************
+//52) Using .push()
+
+function applyPush(array, element) {
+  array.push(element);
+  return array;
+}
+
+var resultArray1 = applyPush([1, 17, 29], 34);
+console.log('should log [1, 17, 29, 34]:', resultArray1);
+
+var resultArray2 = applyPush(['abc', 'def'], 'ghi');
+console.log('should log ["abc", "def", "ghi"]:', resultArray2);
+
+//***********************************
+//53) Using .pop()
+
+function applyPop(array) {
+  var result = array.pop();
+  return result;
+}
+
+var resultElement1 = applyPop([1, 171, 129]);
+console.log('should log 129:', resultElement1);
+
+var resultElement2 = applyPop(['islands', 'peninsulas', 'pacific']);
+console.log('should log pacific:', resultElement2);
+
+//***********************************
+//54) Using unshift()
+
+function applyUnshift(array, element){
+  arrayrray.unshift(element);
+  return array;
+}
+
+var resultArray1 = applyUnshift([7, 9, 4], 1);
+console.log('should log [1, 7, 9, 4]:', resultArray1);
+
+var resultArray2 = applyUnshift(['ef', 'hi'], 'bc');
+console.log('should log ["bc", "ef", "hi"]:', resultArray2);
+
+//***********************************
+//55) Using .shift()
+
+function applyShift(array) {
+  var shifted = array.shift();
+  return shifted;
+}
+
+var resultElement1 = applyShift([1, 171, 129]);
+console.log('should log 1:', resultElement1);
+
+var resultElement2 = applyShift(['islands', 'peninsulas', 'pacific']);
+console.log('should log islands:', resultElement2);
+
+//***********************************
+//56) Using .splice() to add an element
+function applySplice(array, index, element) {
+  array.splice(index, 0, element);
+  return array;
+}
+
+var resultArray1 = addAnElementInGeneral([7, 9, 10], 1, 8);
+console.log('should log [7, 8 , 9, 10]:', resultArray1);
+
+var resultArray2 = addAnElementInGeneral(['q', 'r', 't'], 2, 's');
+console.log('should log ["q", "r", "s", "t"]:', resultArray2);
 
 
 
