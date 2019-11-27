@@ -850,38 +850,33 @@ console.log('should log {q: 9, r: 10}:', resultObject1);
 var resultObject2 = removeAProperty({first: 'one', second: 'two', why: 452, third: 'three'}, 'why');
 console.log('should log {first: "one", second: "two", third: "three"}:', resultObject2);
 
+//***********************************
+//69 Determine if Property is Present
 
+function isPropertyPresent(object, key) {
+  var myPresent;
+  if (myPresent === object[key]) {
+    return false;
+  } else {
+    return true;
+  }
+  return myPresent;
+}
 
+var object1 = {
+  a: 1,
+  b: 2
+}
+var key1 = 'c';
+var result1 = isPropertyPresent(object1, key1);
+console.log('should log false:', result1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var object2 = {
+  'size': 'M',
+  'color': 'green',
+  'cut': 'tapered',
+  'price': 30
+};
+var key2 = 'cut';
+var result2 = isPropertyPresent(object2, key2);
+console.log('should log true:', result2);
