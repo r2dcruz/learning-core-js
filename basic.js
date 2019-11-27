@@ -756,8 +756,99 @@ var array2 = [0, 1, 2, 3, 4];
 var resultCopy2 = makeACopy(array2);
 console.log('should log [0, 1, 2, 3, 4]:', resultCopy2);
 
+//***********************************
+//62) Using .concat()
+
+function applyConcat(array1, array2) {
+  var concat = arra1.concat(array2);
+  return concat;
+}
+
+var array1 = ['a', 'b', 'c'];
+var array2 = ['d', 'e', 'f']
+var resultConcat1 = applyConcat(array1, array2);
+console.log('should log ["a", "b", "c", "d", "e", "f"]:', resultConcat1);
+
+var array3 = [1, 2, 3];
+var array4 = [4, 5, 6];
+var resultConcat2 = applyConcat(array3, array4);
+console.log('should log [1, 2, 3, 4, 5, 6]:', resultConcat2);
 
 
+//***********************************
+//63) Using .join()
+
+function usingJoin(arrayOfStrings, string) {
+  var joinedString = arrayOfStrings.join(string);
+  return joinedString;
+}
+
+var resultString1 = applyJoin(['first', 'second', 'third'], '--');
+console.log('should log joined string:', resultString1);
+
+var resultString2 = applyJoin(['git', 'commit'], ' ');
+console.log('should also log joined string:', resultString2);
+
+//***********************************
+//64) Using .split()
+
+function usingSplit(stringToBeSplit, splitter) {
+  var splitString = stringToBeSplit.split(splitter);
+  return splitString;
+}
+
+var resultArray1 = applySplit('first--second--third', '--');
+console.log('should log split string:', resultArray1);
+
+var resultArray2 = applySplit('git push origin master', ' ');
+console.log('should also log split string:', resultArray2);
+
+//***********************************
+//65) Creating an object
+
+function creatingAnObject() {
+  var result = {}
+  return result;
+}
+
+var resultObject = createObject();
+console.log('should be an object:', typeof resultObject);
+console.log('should not be an array:', Array.isArray(resultObject));
+
+//***********************************
+//66) Accessing a property
+
+function accessAPropert(object, key) {
+  var result = object[key];
+  return result;
+}
+
+var resultValue = accessAProperty({machine: 'Computer', type: 'Macbook', ram: '2 GHz'}, 'ram');
+console.log('should be "2 GHz":', resultValue);
+
+//***********************************
+//67) Reassigning a property
+
+function reassigningProperty(object, key, newValue) {
+  object[key] = newValue;
+  return object;
+}
+
+var resultObject = reassignAProperty({name: 'Ramses', favoriteFood: 'chicken', type: 'dog'}, 'favoriteFood', 'goose');
+console.log('should replace "chicken" with "goose":', resultObject);
+
+//***********************************
+//68) Using 'delete' to to remove property
+
+function deleteProperty(object, key) {
+  delete object[key];
+}
+
+var resultObject1 = removeAProperty({q: 9, r: 10, text: 'bad entry'}, 'text');
+console.log('should log {q: 9, r: 10}:', resultObject1);
+
+var resultObject2 = removeAProperty({first: 'one', second: 'two', why: 452, third: 'three'}, 'why');
+console.log('should log {first: "one", second: "two", third: "three"}:', resultObject2);
 
 
 
