@@ -1,4 +1,6 @@
 //***********************************
+//***********************************
+//Conditionals 1
 //1) isOldEnoughToDrink
 
 function isOldEnoughToDrink(age) {
@@ -46,3 +48,45 @@ function isOldEnoughToDrinkAndDrive(age) {
 
 var output = isOldEnoughToDrinkAndDrive(22);
 console.log(output); // --> false
+
+//***********************************
+//***********************************
+//Objects
+//1) getProperty
+
+function getProperty(obj, key) {
+  return obj[key];
+}
+
+var obj = {
+  key: 'value'
+};
+var output = getProperty(obj, 'key');
+console.log(output); // --> 'value'
+
+//***********************************
+//2) getProperty
+
+function addProperty(obj, key) {
+  // your code here
+  obj[key] = true;
+}
+
+var myObj = {};
+addProperty(myObj, 'myProperty');
+console.log(myObj.myProperty); // --> true
+
+//***********************************
+//3) removeProperty
+
+function removeProperty(obj, key) {
+  // your code here
+  delete obj[key];
+}
+
+var obj = {
+  name: 'Sam',
+  age: 20
+}
+removeProperty(obj, 'name');
+console.log(obj.name); // --> undefined
