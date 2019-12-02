@@ -90,3 +90,15 @@ var obj = {
 }
 removeProperty(obj, 'name');
 console.log(obj.name); // --> undefined
+
+//***********************************
+//***********************************
+//Strings Method 1
+//1) getFullName
+
+function getFullName(firstName, lastName) {
+  return firstName + ' '+ lastName;// your code here
+}
+
+var output = getFullName('Joe', 'Smith');
+console.log(output); // --> 'Joe Smith'
