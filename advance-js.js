@@ -102,3 +102,27 @@ function getFullName(firstName, lastName) {
 
 var output = getFullName('Joe', 'Smith');
 console.log(output); // --> 'Joe Smith'
+
+//***********************************
+//2) getLengthOfWord
+
+function getLengthOfWord(word) {
+  var length = word.length;
+  return length;
+}
+
+var output = getLengthOfWord('some');
+console.log(output); // --> 4
+
+//***********************************
+//3) getLengthOfTwoWords
+
+function getLengthOfTwoWords(word, word2) {
+  var length1 = word1.length;
+  var length2 = word2.length;
+  return length1 + length2;
+}
+
+var output = getLengthOfTwoWords('some', 'words');
+console.log(output);// --> 9
+
