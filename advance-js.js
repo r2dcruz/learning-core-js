@@ -51,7 +51,7 @@ console.log(output); // --> false
 
 //***********************************
 //***********************************
-//Objects
+//Objects 1
 //1) getProperty
 
 function getProperty(obj, key) {
@@ -126,3 +126,57 @@ function getLengthOfTwoWords(word, word2) {
 var output = getLengthOfTwoWords('some', 'words');
 console.log(output);// --> 9
 
+//***********************************
+//***********************************
+//Conditionals 2
+//1) checkAge
+
+function checkAge(name, age) {
+  // your code here
+  if (age >= 21){
+    return 'Welcome, ' + name + '!';
+  } else {
+    return 'Go home, ' + name + '!';
+  }
+}
+
+var output = checkAge('Adrian', 22);
+console.log(output); // --> 'Welcome, Adrian!'
+
+//***********************************
+//2) isGreaterThanTen
+function isGreaterThan10(num) {
+  if (num > 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isGreaterThan10(11);
+console.log(output); // --> true
+
+//***********************************
+//3) isLessThan30
+function isLessThan30(num) {
+  if (num < 30) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isLessThan30(9);
+console.log(output); // --> true
+
+//***********************************
+//4) egaulsTen
+function equalsTen(num) {
+  if (num === 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var output = equalsTen(9);
+console.log(output); // --> false
