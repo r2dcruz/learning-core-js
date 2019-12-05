@@ -180,3 +180,63 @@ function equalsTen(num) {
 }
 var output = equalsTen(9);
 console.log(output); // --> false
+
+//***********************************
+//***********************************
+//Conditionals 3
+//1) isLessThan
+function isLessThan(num1, num2) {
+  return num2 < num1;
+}
+
+var output = isLessThan(9, 4);
+console.log(output)// --> true
+
+//***********************************
+//2) isGreaterThan
+function isGreaterThan(num1, num2) {
+  return num2 > num1;
+}
+
+var output = isGreaterThan(11, 10);
+console.log(output);
+
+//***********************************
+//3) isEqualTo
+
+function isEqualTo(num1, num2) {
+  return num1 === num2;
+}
+
+var output = isEqualTo(11, 10);
+console.log(output);
+
+//***********************************
+//4) isEven
+function isEven(num) {
+  if (num % 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isEven(2);
+console.log(output); // --> true
+
+//ramping up on freeCodeCamp, basic javascript and it is getting difficult. 
+//One question that got me stump is Record Collection
+/** You are given a JSON object representing a part of your musical album 
+collection. Each album has several properties and a unique id number as its key.
+Not all albums have complete information
+
+write a function which takes an album's id, a property prop (like or), 
+and a value to modify the data in this collection.
+
+Will create a separate page for the questions i still need practice on
+**/
+
+//***********************************
+//***********************************
+// 
+//1)
