@@ -238,5 +238,60 @@ Will create a separate page for the questions i still need practice on
 
 //***********************************
 //***********************************
-// 
-//1)
+//Conditionals 4
+//1) isOdd
+
+function isOdd (num) {
+  if (num % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isOdd(9);
+console.log(output) // --> true
+
+//***********************************
+//2) isSameLength
+
+function isSameLength(word1, word2) {
+  if (word1 === word2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isSameLength('big', 'small');
+console.log(output);// --> false
+
+//***********************************
+//3) isBothOdd
+
+function isBothOdd(num1, num2) {
+  if (num1 % 2 === 1 && num2 % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = areBothOdd(1, 3);
+console.log(output); // --> true
+
+//***********************************
+//4) isEitherEven
+
+function isEitherEven(num1, num2) {
+  if (num1 % 2 === 0 || num2 % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isEitherEven(1, 4);
+console.log(output); // --> true
+
+//Learned about replacing Loops using Recursion. Still requre practice
