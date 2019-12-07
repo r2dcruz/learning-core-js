@@ -295,3 +295,21 @@ var output = isEitherEven(1, 4);
 console.log(output); // --> true
 
 //Learned about replacing Loops using Recursion. Still requre practice
+
+/**Learning git, learned about the number system, radix, and recursion
+**/
+
+//***********************************
+//***********************************
+//Conditionals 5
+//1) isOddLengthfunction 
+isOddLength(word) {
+  if (word.length % 2 === 1) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
+var output = isOddLength('special');
+console.log(output); // --> true
