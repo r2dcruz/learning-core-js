@@ -296,3 +296,16 @@ console.log(output); // --> true
 
 //Learned about replacing Loops using Recursion. Still requre practice
 //Added sub folders
+
+//***********************************
+//***********************************
+//Conditionals 5
+//1)isOddLength
+
+function isOddLength(word) {
+  if (word.length % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
