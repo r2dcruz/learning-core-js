@@ -880,3 +880,30 @@ var object2 = {
 var key2 = 'cut';
 var result2 = isPropertyPresent(object2, key2);
 console.log('should log true:', result2);
+
+//***********************************
+//70) Determine if a value is an Object
+
+function isAnObject(input) {
+  var isObject = typeof input === "object";
+  var isNotAnArray = Array.isArray(input) !== true;
+  var ispObjectAndNotAnArray = isObject && isNotAnArray;
+  return ispObjectAndNotAnArray;
+}
+
+var resultBoolean1 = isAnObject([1, 2, 3]);
+console.log('should log false:', resultBoolean1);
+
+var resultBoolean2 = isAnObject({name: 'Tom', friend: 'Jerry'});
+console.log('should log true:', resultBoolean2);
+
+//***********************************
+//71) Using Object.keys()
+function getAllKeys(obj) {
+  var getKeys = Object.keys(obj);
+  return getKeys;
+}
+
+var resultKeys = getAllKeys({firstScore: 12, secondScore: 34, thirdScore: 28});
+console.log('should log ["firstScore", "secondScore", "thirdScore"]:', resultKeys);
+JAVASCRIPT
