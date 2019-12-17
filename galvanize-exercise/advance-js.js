@@ -321,3 +321,17 @@ function isEvenLength(word) {
 
 var output = isEvenLength('wow');
 console.log(output); // --> false
+
+//***********************************
+//3)isEvenAndGreaterThan10
+
+function isEvenAndGreaterThan10(num) {
+  if (num % 2 === 0 && num > 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var output = isEvenAndGreaterThanTen(13);
+console.log(output); // --> false
