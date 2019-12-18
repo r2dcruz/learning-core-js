@@ -335,3 +335,46 @@ function isEvenAndGreaterThan10(num) {
 
 var output = isEvenAndGreaterThanTen(13);
 console.log(output); // --> false
+
+//***********************************
+//***********************************
+//Math 1
+//1) average
+function average(num1, num2) {
+  let average = ((num1 + num2)/2) ;
+  return average;
+}
+
+var output = average(4, 6);
+console.log(output)// --> 5
+
+//***********************************
+//2) computeAreaOfATriangle
+function computeAreaOfATriangle (base, height) {
+  let area = (base * height)/2;
+  return area;
+}
+
+var output = computeAreaOfATriangle(4, 6);
+console.log(output); // --> 12
+
+//***********************************
+//3) cube
+function cube(num) {
+  let number = num**3;
+  return number;
+}
+
+var output = cube(3);
+console.log(output); // --> 27
+
+//***********************************
+//4) square
+
+function square(num) {
+  let number = num**2;
+  return number;
+}
+
+var output = square(5);
+console.log(output); // --> 25
