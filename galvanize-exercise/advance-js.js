@@ -378,3 +378,18 @@ function square(num) {
 
 var output = square(5);
 console.log(output); // --> 25
+
+//***********************************
+//***********************************
+//String Methods 2
+//1) computeAverageLengthOfWords
+
+function computeAverageLengthOfWords(word1, word2) {
+  var length1 = word1.length;
+  var length2 = word2.length;
+  var sum = (length1 + length2)/2
+  return sum;
+}
+
+var output = computeAverageLengthOfWords('code', 'programs');
+console.log(output); // --> 6
