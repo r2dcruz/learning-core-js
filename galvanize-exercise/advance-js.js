@@ -393,3 +393,53 @@ function computeAverageLengthOfWords(word1, word2) {
 
 var output = computeAverageLengthOfWords('code', 'programs');
 console.log(output); // --> 6
+
+//***********************************
+//***********************************
+//Objects 2
+//1) addFullNameProperty
+
+function addFullNameProperty(obj) {
+  var firstName = obj.firstName;
+  var lastName = obj.lastName;
+  var fullName = firstName + ' ' + lastName;
+  obj['fullName'] = fullNameValue;
+}
+
+var person = {
+  firstName: 'Jade',
+  lastName: 'Smith'
+};
+addFullNameProperty(person);
+console.log(person.fullName); // --> 'Jade Smith'
+
+//***********************************
+//2) addObjectProperty
+
+function addObjectProperty(obj1, key, obj2) {
+  obj1[key] = obj2;
+}
+
+var person1 = {
+  name: 'Joe Blow',
+  role: 'schlub'
+};
+var person2 = {
+  name: 'Mr. Burns',
+  role: 'supervisor'
+};
+addObjectProperty(person1, 'manager', person2);
+console.log(person1.manager); // --> { name: 'Mr. Burns', role: 'supervisor' }
+
+//***********************************
+//3)isPersonOldEnoughToDrinkAndDrive
+
+function isPersonOldEnoughToDrinkAndDrive() {
+  return false;
+}
+
+var obj = {
+  age: 45
+};
+var output = isPersonOldEnoughToDrinkAndDrive(obj);
+console.log(output); // --> false
