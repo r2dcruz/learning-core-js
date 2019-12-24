@@ -443,3 +443,24 @@ var obj = {
 };
 var output = isPersonOldEnoughToDrinkAndDrive(obj);
 console.log(output); // --> false
+
+//***********************************
+//***********************************
+//Objects 3
+//1)isPersonOldEnoughToDrive
+function isPersonOldEnoughToDrive() {
+  let age = person.age;
+  if (age >= 16) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var obj = {
+  age: 16
+};
+var output = isPersonOldEnoughToDrive(obj);
+console.log(output); // --> true
+
+//coding exercise, need to at least do one exercise (function)
