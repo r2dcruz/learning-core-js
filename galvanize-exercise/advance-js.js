@@ -464,3 +464,22 @@ var output = isPersonOldEnoughToDrive(obj);
 console.log(output); // --> true
 
 //coding exercise, need to at least do one exercise (function)
+
+//***********************************
+//2)isPersonOldEnoughToVote
+
+function isPersonOldEnoughToVote(person) {
+ 
+  var age = person.age;
+  if (age >= 18) {
+      return true;
+  } else {
+      return false;
+  }
+};
+
+var obj = {
+  age: 19
+};
+var output = isPersonOldEnoughToVote(obj);
+console.log(output); // --> true
