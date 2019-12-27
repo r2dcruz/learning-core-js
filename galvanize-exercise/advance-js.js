@@ -483,3 +483,17 @@ var obj = {
 };
 var output = isPersonOldEnoughToVote(obj);
 console.log(output); // --> true
+
+//***********************************
+//3) addArrayProperty
+
+function addArrayProperty(obj, key, arr ) {
+  obj[key] = arr;
+}
+
+var myObj = {};
+var myArray = [1, 3];
+addArrayProperty(myObj, 'myProperty', myArray);
+console.log(myObj.myProperty); // --> [1, 3]
+
+//Started training on codeacademy again
