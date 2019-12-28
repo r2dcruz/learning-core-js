@@ -497,3 +497,18 @@ addArrayProperty(myObj, 'myProperty', myArray);
 console.log(myObj.myProperty); // --> [1, 3]
 
 //Started training on codeacademy again
+
+//***********************************
+//***********************************
+//Array Methods 1
+//1) getNthElement
+
+function getNthElement(array, n) {
+  var element = array[n];
+  return element;
+}
+
+var output = getNthElement([1, 3, 5], 1);
+console.log(output); // --> 3
+
+//codeacademy exercise
