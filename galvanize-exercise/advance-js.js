@@ -525,3 +525,28 @@ var output = getFirstElement([1, 2, 3, 4, 5]);
 console.log(output); // --> 1
 
 //Continue codeacademy
+
+//***********************************
+//3) getLastElement
+
+function getLastElement(array) {
+  var lastElement = array[array.length -1];
+  return lastElement;
+}
+
+var output = getLastElement([1, 2, 3, 4]);
+console.log(output); // --> 4
+
+//***********************************
+//***********************************
+//Array Methods 2
+//1) addToFront
+
+function addToFront(arr) {
+  arr.unshift();
+  return arr
+}
+
+var output = addToFront([1, 2], 3);
+console.log(output); // -> [3, 1, 2]
+
