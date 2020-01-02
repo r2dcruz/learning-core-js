@@ -554,7 +554,6 @@ console.log(output); // -> [3, 1, 2]
 //2) addToBack
 
 function addToBack(arr, element) {
-  // your code here
   arr.push(element);
   return arr;
 }
@@ -563,3 +562,19 @@ var output = addToBack([1, 2], 3);
 console.log(output); // -> [1, 2, 3]
 
 //practice ES6
+
+//***********************************
+//***********************************
+//Math 2
+//1) computeAreaOfARectangle
+
+function computeAreaOfARectangle(length, width) {
+
+  var area = length * width;
+  return area;
+}
+
+var output = computeAreaOfARectangle(4, 8);
+console.log(output); // --> 32
+
+//new year, start applying for new positions
