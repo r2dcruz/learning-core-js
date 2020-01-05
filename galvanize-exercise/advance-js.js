@@ -578,3 +578,15 @@ var output = computeAreaOfARectangle(4, 8);
 console.log(output); // --> 32
 
 //new year, start applying for new positions
+
+//2) computePerimeterOfARectangle
+
+function computePerimeterOfARectangle(length, width) {
+  var parimeter = length + length + width + width;
+  return parimeter;
+}
+
+var output = computePerimeterOfARectangle(5, 2);
+console.log(output); // --> 14
+
+//Job hunting and 100 days of code. (100 - 4)
