@@ -592,3 +592,16 @@ console.log(output); // --> 14
 //Job hunting and 100 days of code. (100 - 4)
 
 //thorough study of linkedlist
+
+//3) computePerimeterOfATriangle
+
+function computePerimeterOfATriangle(side1, side2, side3) {
+
+  var triangle = side1 + side2 + side3;
+  return triangle;
+}
+
+var output = computePerimeterOfATriangle(6, 7, 10);
+console.log(output); // --> 23
+
+//arrays, hash tables, linkedlist, stacks, queues, trees
