@@ -1,7 +1,7 @@
 //full blown explanation code
 function reverse(str) {
   //check input, input validation if we don't assume it is a string
-  if (typeof str !== 'string') {
+  if (!str || str.length < 2 ||typeof str !== 'string') {
     return 'this is not a string';
   }
   //convert to an array
@@ -29,3 +29,19 @@ const reverse3 = str => str.split('').reverse().join('');
 
 reverse('This is good');
 reverse2('This is best!');
+
+//practice
+// function reverse(str) {
+//   if (typeof str !== 'string') {
+//     return 'this is not a string';
+//   }
+//   const backwards = [];
+//   const totalItems = str.length -1;
+//   for (let i = totalItems; i >= 0; i--) {
+//     backwards.push(str[i]);
+//   }
+//   return backwards.join('');
+// }
+
+
+// reverse('hello');
