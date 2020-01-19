@@ -605,3 +605,17 @@ var output = computePerimeterOfATriangle(6, 7, 10);
 console.log(output); // --> 23
 
 //arrays, hash tables, linkedlist, stacks, queues, trees
+
+//Math 3
+//1) computeTripledAreaOfARectangle
+
+function computeTripledAreaOfARectangle(length, width) {
+  var area = length * width;
+  var total3xArea = area * 3;
+  return total3xArea;
+}
+
+var output = computeTripledAreaOfARectangle(2, 4);
+console.log(output); // --> 24
+
+//Continue studing linkedlist, singley & doubley. OOP 
