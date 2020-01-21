@@ -579,6 +579,7 @@ console.log(output); // --> 32
 
 //new year, start applying for new positions
 
+//***********************************
 //2) computePerimeterOfARectangle
 
 function computePerimeterOfARectangle(length, width) {
@@ -593,6 +594,7 @@ console.log(output); // --> 14
 
 //thorough study of linkedlist
 
+//***********************************
 //3) computePerimeterOfATriangle
 
 function computePerimeterOfATriangle(side1, side2, side3) {
@@ -619,3 +621,15 @@ var output = computeTripledAreaOfARectangle(2, 4);
 console.log(output); // --> 24
 
 //Continue studing linkedlist, singley & doubley. OOP 
+
+//***********************************
+//2)computePerimeterOfACircle
+
+function computePerimeterOfACircle(radius) {
+  // your code here
+  var perimeter = 2 * Math.PI * radius;
+  return perimeter;
+}
+
+var output = computePerimeterOfACircle(4);
+console.log(output); // --> 25.132741228718345
