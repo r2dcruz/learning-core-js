@@ -633,3 +633,16 @@ function computePerimeterOfACircle(radius) {
 
 var output = computePerimeterOfACircle(4);
 console.log(output); // --> 25.132741228718345
+
+//***********************************
+//3)computeAreaOfACircle
+
+function computeAreaOfACircle(radius) {
+  var areaCircle = Math.PI * radius**2;
+  return areaCircle;
+}
+
+var output = computeAreaOfACircle(4);
+console.log(output); // --> 50.26548245743669
+
+//code once a day, and mastering linkedList. Kinda fun!
