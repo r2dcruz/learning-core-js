@@ -1,7 +1,7 @@
 //singley linkedList
 
 class LinkedList {
-    constructor() {
+    constructor(value) {
         this.head = {
             value: value,
             data: null
