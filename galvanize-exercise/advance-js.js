@@ -646,3 +646,16 @@ var output = computeAreaOfACircle(4);
 console.log(output); // --> 50.26548245743669
 
 //code once a day, and mastering linkedList. Kinda fun!
+
+//***********************************
+//***********************************
+//Math 4
+//1) computerPower;
+
+function computerPower(num, exponent) {
+  let compute =  num ** exponent;
+  return compute;
+}
+
+var output = computePower(2, 3);
+console.log(output); // --> 8
