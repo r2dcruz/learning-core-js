@@ -9,6 +9,7 @@ class LinkedList {
         this.tail = this.head;
         this.length = 1;
     }
+    //add to the end
     append(value) {
         const newNode = {
             value: value,
@@ -19,6 +20,7 @@ class LinkedList {
         this.length++;
         return this;
     }
+    //add to the front
     prepend(value) {
         const newNode = {
             value: value,
@@ -29,6 +31,7 @@ class LinkedList {
         this.length++;
         return this;
     }
+    //specific add
     insert(index, value) {
         if (index >= this.length) {
             return this.append(value);
@@ -71,6 +74,16 @@ class LinkedList {
         }
         return array;
     }
+    search(value) {
+    let currentNode = this.head;
+    while (currentNode) {
+      if (currentNode.value === value) {
+        return currentNode;
+      }
+      currentNode = currentNode.next;
+    }
+    return "Doesn't exist";
+  }
 }
 
 let myLinkedList = new LinkedList(10);
