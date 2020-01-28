@@ -49,6 +49,10 @@ class LinkedList {
     }
     traverseToIndex(index) {
         //next to check params
+        if (index >= this.length) {
+          return "Check your index";
+        }
+
         let counter = 0;
         let currentNode = this.head;
         while (counter !== index) {
@@ -59,6 +63,9 @@ class LinkedList {
     }
     remove(index) {
         //need to check params
+        if (index >= this.length) {
+          return "Check your index";
+        }
         const leader = this.traverseToIndex(index-1);
         const unwantedNode = leader.next;
         leader.next = unwantedNode;
