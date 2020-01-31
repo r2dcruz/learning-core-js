@@ -659,3 +659,28 @@ function computerPower(num, exponent) {
 
 var output = computePower(2, 3);
 console.log(output); // --> 8
+
+//***********************************
+//2) computeSquareRoot
+
+function computeSquareRoot(num) {
+  // your code here
+  var sqrrt = Math.sqrt(num);
+  return sqrrt;
+}
+var output = computeSquareRoot(9);
+console.log(output); // --> 3
+
+//***********************************
+//3) doubleSquareRootOf
+
+function doubleSquareRootOf(num) {
+  var sqrrt = Math.sqrt(num);// your code here
+  var double = sqrrt * 2;
+  return double;
+}
+
+var output = doubleSquareRootOf(121);
+console.log(output); // --> 22
+
+//ydkjs reading on the plane
