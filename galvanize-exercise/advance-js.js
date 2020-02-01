@@ -684,3 +684,21 @@ var output = doubleSquareRootOf(121);
 console.log(output); // --> 22
 
 //ydkjs reading on the plane
+
+//***********************************
+//***********************************
+//String Methods 3
+//getLengthOfThreeWords
+
+function getLengthOfThreeWords(word1, word2, word3) {
+  var length1 = word1.length;
+  var length2 = word2.length;
+  var length3 = word3.length;
+  totalLength = length1 + length2 + length3;
+  return totalLength;
+}
+
+var output = getLengthOfThreeWords('some', 'other', 'words');
+console.log(output); // --> 14
+
+//stand up to learn how to create mock sites on webflow
