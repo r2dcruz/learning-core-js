@@ -702,3 +702,16 @@ var output = getLengthOfThreeWords('some', 'other', 'words');
 console.log(output); // --> 14
 
 //stand up to learn how to create mock sites on webflow
+
+//***********************************
+//***********************************
+//Array methods 3
+//joinArrays
+
+function joinArrays(arr1, arr2) {
+  var newArray = arr1.concat(arr2);
+  return newArray;
+}
+
+console.log(output); // --> [1, 2, 3, 4]
+//codewars day
