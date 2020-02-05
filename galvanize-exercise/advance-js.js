@@ -715,3 +715,15 @@ function joinArrays(arr1, arr2) {
 
 console.log(output); // --> [1, 2, 3, 4]
 //codewars day
+
+//***********************************
+//getElementsAfter
+
+function getElementsAfter(array, n) {
+  return array.slice(n + 1)
+}
+
+var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
+console.log(output); // --> ['d', 'e']
+
+//very beginning start of python 2/4/2020
