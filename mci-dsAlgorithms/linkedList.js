@@ -68,7 +68,7 @@ class LinkedList {
         }
         const leader = this.traverseToIndex(index-1);
         const unwantedNode = leader.next;
-        leader.next = unwantedNode;
+        leader.next = unwantedNode.next;
         this.length--;
         return this;
     }
