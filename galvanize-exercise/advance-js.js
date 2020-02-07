@@ -706,7 +706,7 @@ console.log(output); // --> 14
 //***********************************
 //***********************************
 //Array methods 3
-//joinArrays
+//1)joinArrays
 
 function joinArrays(arr1, arr2) {
   var newArray = arr1.concat(arr2);
@@ -717,7 +717,7 @@ console.log(output); // --> [1, 2, 3, 4]
 //codewars day
 
 //***********************************
-//getElementsAfter
+//2) getElementsAfter
 
 function getElementsAfter(array, n) {
   return array.slice(n + 1)
@@ -727,3 +727,16 @@ var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
 console.log(output); // --> ['d', 'e']
 
 //very beginning start of python 2/4/2020
+
+//***********************************
+//3) getElementsUpTo
+
+function getElementsUpTo(array, n) {
+  var result = array.slice(0, n);
+  return result;
+}
+
+var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
+console.log(output); // --> ['d', 'e']
+
+//practicing making frontend sites using webflow, and practicing LinkedList --> almost mastering!
