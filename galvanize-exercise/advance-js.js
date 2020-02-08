@@ -740,3 +740,16 @@ var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
 console.log(output); // --> ['d', 'e']
 
 //practicing making frontend sites using webflow, and practicing LinkedList --> almost mastering!
+
+//***********************************
+//***********************************
+//Array Methods 4
+//1) getAllElementsButFirst
+
+function getAllElementsButFirst(array) {
+  return array.slice(1);
+}
+
+var input = [1, 2, 3, 4];
+var output = getAllElementsButFirst(input);
+console.log(output); // --> [2, 3, 4
