@@ -753,3 +753,12 @@ function getAllElementsButFirst(array) {
 var input = [1, 2, 3, 4];
 var output = getAllElementsButFirst(input);
 console.log(output); // --> [2, 3, 4
+
+//***********************************
+//2) getAll ElementsButLast
+
+function getAllElementsButLast(array) {
+  // your code here
+  var lastIndex = array.length - 1;
+  return array.slice(0, lastIndex);
+}
