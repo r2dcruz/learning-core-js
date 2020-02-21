@@ -755,10 +755,24 @@ var output = getAllElementsButFirst(input);
 console.log(output); // --> [2, 3, 4
 
 //***********************************
-//2) getAll ElementsButLast
+//2) getAllElementsButLast
 
 function getAllElementsButLast(array) {
   // your code here
   var lastIndex = array.length - 1;
   return array.slice(0, lastIndex);
 }
+
+//***********************************
+//3) removeFromFront
+
+function removeFromFront(arr) {
+  // your code here
+  var result = arr.shift();
+  return arr;
+}
+
+var output = removeFromFront([1, 2, 3]);
+console.log(output); // --> [2, 3]
+
+//freecodecamp, dev.to, DS lecture
