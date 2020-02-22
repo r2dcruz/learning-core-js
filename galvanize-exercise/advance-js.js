@@ -776,3 +776,18 @@ var output = removeFromFront([1, 2, 3]);
 console.log(output); // --> [2, 3]
 
 //freecodecamp, dev.to, DS lecture
+
+//***********************************
+//***********************************
+// Array Methods 6
+// removeFromBack
+
+function removeFromBack(arr) {
+  arr.pop();
+  return arr;
+}
+
+var output = removeFromBack([1, 2, 3]);
+console.log(output); // --> [1, 2]
+
+//not much today
