@@ -43,6 +43,7 @@ class Stack {
       if (this.top === this.bottom) {
         this.bottom = null;
       }
+      const holdingPointer = this.top //temp hold if we still want this value
       this.top = this.top.next;
       this.length--;
       return this;
@@ -58,3 +59,30 @@ stack.peek();
 stack.pop();
 stack.pop();
 stack.pop();
+
+// using arrays
+
+class Stack{
+    constructor() {
+      this.array = [];
+    }
+    peek() {
+      return this.array[this.array.length-1];
+    }
+    push(value) {
+      this.array.push(value);
+      return this;
+    }
+    pop() {
+      this.array.pop();
+      return this;
+    }
+  }
+  
+  let st = new Stack();
+  st.push("google");
+  st.push("twitter");
+  st.push("amazon");
+  st.pop();
+  st.pop();
+  st.pop();
