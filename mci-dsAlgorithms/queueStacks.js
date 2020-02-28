@@ -33,3 +33,33 @@ const stQueue = new StackQueue();
 stQueue.enqueue("google");
 stQueue.enqueue("apple");
 stQueue.enqueue("facebook");
+
+//leet code submission
+//plan to revise and clean
+var MyQueue = function() {
+    this.array = []
+    
+};
+
+MyQueue.prototype.push = function(value) {
+    this.array.push(value)
+};
+
+MyQueue.prototype.pop = function() {
+    let length = this.array.length;
+    if(length > 0){
+        return this.array.shift()
+    }
+    return false
+};
+
+MyQueue.prototype.peek = function() {
+    let length = this.array.length;
+    if(length > 0){
+        return this.array[0]
+    }
+};
+
+MyQueue.prototype.empty = function() {
+    return this.array.length === 0
+};
