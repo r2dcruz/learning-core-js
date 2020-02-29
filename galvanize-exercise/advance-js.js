@@ -791,3 +791,29 @@ var output = removeFromBack([1, 2, 3]);
 console.log(output); // --> [1, 2]
 
 //not much today
+
+//***********************************
+//***********************************
+//Advanced 3
+// 1) select
+
+function select(arr, obj) {
+  var result = {};
+  
+  for (var i = 0; i < arr.length; i++) {
+      if (obj[arr[i]] !== undefined) {
+          result[arr[i]] = obj[arr[i]];
+      }
+  }
+  return result;
+}
+
+var arr = ['a', 'c', 'e'];
+var obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4
+};
+var output = select(arr, obj);
+console.log(output); // --> { a: 1, c: 3 }
