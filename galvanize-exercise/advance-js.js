@@ -817,3 +817,22 @@ var obj = {
 };
 var output = select(arr, obj);
 console.log(output); // --> { a: 1, c: 3 }
+
+//***********************************
+//***********************************
+// conditionals 9
+// 1) getLongestOfThreeWords
+
+function getLongestOfThreeWords(word1, word2, word3) {
+  var words = [word1, word2, word3];
+  var longest = words[0];
+  for (var i = 1; i < words.length; i++) {
+      if (words[i].length > longest.length) {
+          longest = words[i];
+      }
+  }
+  return longest;
+}
+
+var output = getLongestOfThreeWords('these', 'three', 'words');
+console.log(output); // --> 'these'
