@@ -860,3 +860,32 @@ var output = findShortestOfThreeWords('a', 'two', 'three');
 console.log(output); // --> 'a'
 
 //started learning python. not bad.
+
+//***********************************
+//***********************************
+//Advance 3
+// 1) select
+
+function select(arr, obj) {
+  var result = {};
+  
+  for (var i = 0; i < arr.length; i++) {
+      if (obj[arr[i]] !== undefined) {
+          result[arr[i]] = obj[arr[i]];
+      }
+  }
+  return result;
+}
+
+var arr = ['a', 'c', 'e'];
+var obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4
+};
+var output = select(arr, obj);
+console.log(output); // --> { a: 1, c: 3 }
+
+//practice on LinkedList, still having trouble with inserting and traversing
+
