@@ -117,4 +117,7 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.remove(2);
+myLinkedList.remove(3)
 myLinkedList.printList();
+
+//linkedList confidence = 95
