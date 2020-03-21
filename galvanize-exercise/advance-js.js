@@ -889,3 +889,28 @@ console.log(output); // --> { a: 1, c: 3 }
 
 //practice on LinkedList, still having trouble with inserting and traversing
 
+// Advanced 4
+// countAllCharacters
+
+function countAllCharacters(str) {
+  //create var count
+  var count = {};
+
+  //iterate over the array
+  for( var i = 0; i < str.length; i++) {
+      //count over index by using undefined
+    if (count[str[i]] === undefined) {
+        //if it exists, instantiate
+      count[str[i]] = 1;
+    } else {
+        //if it doesn't, count it
+      count[str[i]] += 1;
+    }
+  }
+  return count;
+}
+
+var output = countAllCharacters('banana');
+console.log(output); // --> {b: 1, a: 3, n: 2}
+
+// linkedList practice!!!
