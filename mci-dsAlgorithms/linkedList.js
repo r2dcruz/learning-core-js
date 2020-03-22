@@ -111,13 +111,15 @@ class LinkedList {
     }
 }
 
+// main parts of linkedList
+
 let myLinkedList = new LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.remove(2);
-myLinkedList.remove(3)
+myLinkedList.append("initiating");
+myLinkedList.append("addBack");
+myLinkedList.append("addFront");
+myLinkedList.append("index");
+myLinkedList.append("traverseFunc");
+myLinkedList.append("remove");
 myLinkedList.printList();
 
 //linkedList confidence = 95
