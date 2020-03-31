@@ -128,8 +128,8 @@ myLinkedList.printList();
 
 class Node {
     constructor(value) {
-        value: value;
-        next: null;
+        this.value = value;
+        this.next = null;
     }
   }
 
@@ -166,6 +166,23 @@ class Node {
           this.length++;
           return this;
       }
+      insert(index, value) {
+          const newNode = new Node(value);
+          const leader = this.traverseToIndex(index-1);
+          const holdingPointer = leader.next;
+          leader.next = newNode;
+          newNode.next = holdingPointer;
+          this.length++;
+          return this;
+      }
+      insert(index, value) {
+          const newNode = new Node(value);
+          const leader = this.traverseToIndex(index-1);
+          const holdingPointer = leader.next;
+          leader.next = newNode;
+          newNode.next = holdingPointer;
+          this.length++;
+      }
       traverseToIndex(index) {
           let counter = 0;
           let currentNode = this.head;
@@ -179,6 +196,33 @@ class Node {
           const array = [];
           let currentNode = this.head;
           while (currentNode !== null ) {
+              array.push(currentNode.value);
+              currentNode = currentNode.next;
+          }
+          return array;
+      }
+      print() {
+          const array = [];
+          let currentNode = this.head;
+          while (currentNode !== null) {
+              array.push(currentNode.value);
+              currentNode = currentNode.next;
+          }
+          return array;
+      }
+      print() {
+          const array = [];
+          let currentNode = this.head;
+          while (currentNode !== null) {
+              array.push(currentNode.value);
+              currentNode = currentNode.next;
+          }
+          return arrray
+      }
+      print() {
+          const array = [];
+          let currentNode = this.head;
+          while (currentNode !== null) {
               array.push(currentNode.value);
               currentNode = currentNode.next;
           }
