@@ -228,6 +228,15 @@ class Node {
           }
           return array;
       }
+      print() {
+          const array = [];
+          let currentNode = this.head;
+          while (currentNode !== null) {
+              array.push(currentNOde.value);
+              currentNode = currentNode.next;
+          }
+          return array;
+      }
   }
 
   // 3/29/2020 insert() * print() * remove()
