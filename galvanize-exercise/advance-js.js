@@ -914,3 +914,60 @@ var output = countAllCharacters('banana');
 console.log(output); // --> {b: 1, a: 3, n: 2}
 
 // linkedList practice!!!
+
+//***********************************
+//***********************************
+//Array Methods 9
+
+//filterOddLengthWords
+
+function filterOddLengthWords(words) {
+  let oddLengthWord = [];
+  
+  for (let i = 0; i < words.length; i++) {
+      if (words[i].length % 2 === 1) {
+          oddLengthWord.push(words[i]);
+      }
+  }
+  
+  return oddLengthWord
+}
+
+var output = filterOddLengthWords(['there', 'it', 'is', 'now']);
+console.log(output); // --> ['there', "now']
+
+//filterEvenLengthWords
+
+function filterEvenLengthWords(words) {
+  let evenLengthWord = [];
+  for (let i = 0; i < words.length; i++) {
+      if (words[i].length % 2 === 0) {
+          evenLengthWord.push(words[i]);
+      }
+  }
+  return evenLengthWord;
+}
+
+var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
+console.log(output); // --> ['word', 'word']
+
+//***********************************
+//getLengthOfLongestElement
+
+function getLengthOfLongestElement(arr) {
+  if (arr.length === 0) {
+      return 0;
+  }
+  let longestString = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i].length > longestString.length) {
+          longestString = arr[i];
+      }
+  }
+  return longestString.length;
+}
+
+var output = getLengthOfLongestElement(['one', 'two', 'three']);
+console.log(output); // --> 5
+
+//going back to some exercises
