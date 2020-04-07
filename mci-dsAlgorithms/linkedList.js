@@ -182,5 +182,21 @@ class LinkedList {
         }
         return array;
     }
+    print() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
+    print() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
 }
 // 3/29/2020 insert() * print() * remove()
