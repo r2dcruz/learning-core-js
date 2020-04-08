@@ -198,5 +198,23 @@ class LinkedList {
         }
         return array;
     }
+    insert(index) {
+        const newNode = new Node(value);
+        const leader = this.traverseToIndex(index-1);
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    traverseToIndex(index) {
+        let counter = 0;
+        let currentNode = this.head;
+        while (counter !== index) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
 }
 // 3/29/2020 insert() * print() * remove()
