@@ -146,3 +146,25 @@ myLinkedList.printList();
 // 3/29/2020 insert() * print() * remove()
 
 //cleaning up this practice
+
+class LinkedList {
+    constructor(value) {
+        this.head = {
+            value: value,
+            next: null
+        };
+        this.tail = this.head;
+        this.length = 1;
+    }
+    print() {
+        let array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
+}
+
+//one more practice
