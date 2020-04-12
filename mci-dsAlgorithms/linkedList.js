@@ -90,16 +90,6 @@ class LinkedList {
         }
         return array;
     }
-    print() {
-        const array = [];
-        let currentNode = this.head;
-        while (currentNode !== null) {
-            array.push(currentNode.value);
-            currentNode = currentNode.next;
-        }
-        return array;
-    }
-
     search(value) {
     let currentNode = this.head;
     while (currentNode) {
@@ -147,7 +137,14 @@ myLinkedList.printList();
 
 //cleaning up this practice
 
-class LinkedList {
+class Node1 {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+Class linkedlist {
     constructor(value) {
         this.head = {
             value: value,
@@ -156,7 +153,40 @@ class LinkedList {
         this.tail = this.head;
         this.length = 1;
     }
-    print() {
+    addBack1(value) {
+        const newNode = new Node1(value);
+        this.tail.next = newNode;
+        this.tail = newNode;
+        this.length++;
+        return this;
+    }
+    addFront1(value){
+        const newNode = new Node1(value);
+        const holdingPointer = this.head;
+        this.head = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    insert1(index, value) {
+        const newNode = new Node1(value);
+        const leader = this.traversetoindex1(index-1);
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    traversetoindex1(index) {
+        let counter = 0;
+        let currentNode = this.head;
+        while (currentNode !== counter) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
+    print1() {
         let array = [];
         let currentNode = this.head;
         while (currentNode !== null) {
