@@ -144,56 +144,38 @@ class Node1 {
     }
 }
 
-Class linkedlist {
-    constructor(value) {
-        this.head = {
-            value: value,
-            next: null
-        };
-        this.tail = this.head;
-        this.length = 1;
+class queue {
+    constructor() {
+        this.top = null;
+        this.bottom = null;
+        this.length = 0;
     }
-    addBack1(value) {
-        const newNode = new Node1(value);
-        this.tail.next = newNode;
-        this.tail = newNode;
-        this.length++;
-        return this;
-    }
-    addFront1(value){
-        const newNode = new Node1(value);
-        const holdingPointer = this.head;
-        this.head = newNode;
-        newNode.next = holdingPointer;
-        this.length++;
-        return this;
-    }
-    insert1(index, value) {
-        const newNode = new Node1(value);
-        const leader = this.traversetoindex1(index-1);
-        const holdingPointer = leader.next;
-        leader.next = newNode;
-        newNode.next = holdingPointer;
-        this.length++;
-        return this;
-    }
-    traversetoindex1(index) {
-        let counter = 0;
-        let currentNode = this.head;
-        while (currentNode !== counter) {
-            currentNode = currentNode.next;
-            counter++;
+    enqueue(value) {
+        const newNode = Node1(value);
+        if (this.top === null) {
+            this.top = newNode;
+            this.bottom = newNode;
+        } else {
+            this.top.next = newNode;
+            this.top = newNode;
         }
-        return currentNode;
+        this.length++;
+        return this;
     }
-    print1() {
-        let array = [];
-        let currentNode = this.head;
-        while (currentNode !== null) {
-            array.push(currentNode.value);
-            currentNode = currentNode.next;
+    dequeue() {
+        if (this.top === null) {
+            return null;
         }
-        return array;
+        if (this.top === this.bottom) {
+            this.bottom = null;
+        }
+        const holdingPointer = this.top;
+        this.top = this.top.next;
+        this.length--;
+        return this;
+    }
+    peek() {
+        return this.top;
     }
 }
 
