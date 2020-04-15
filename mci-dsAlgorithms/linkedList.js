@@ -180,3 +180,45 @@ class queue {
 }
 
 //one more practice
+
+class Node1 {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class queue {
+    constructor() {
+        this.top = null;
+        this.bottom = null;
+        this.length = 0;
+    }
+    enqueue(value) {
+        const newNode = Node1(value);
+        if (this.top === null) {
+            this.top = newNode;
+            this.bottom = newNode;
+        } else {
+            this.top.next = newNode;
+            this.top = newNode;
+        }
+        this.length++;
+        return this;
+    }
+    dequeue() {
+        if (this.top === null) {
+            return null;
+        }
+        if (this.top === this.bottom) {
+            this.bottom = null;
+        }
+        const holdingPointer = this.top;
+        this.top = this.top.next;
+        this.length--;
+        return this;
+    }
+    peek() {
+        return this.top;
+    }
+}
