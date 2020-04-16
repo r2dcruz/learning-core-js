@@ -137,88 +137,123 @@ myLinkedList.printList();
 
 //cleaning up this practice
 
-class Node1 {
+//keep practicing
+class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
 
-class queue {
-    constructor() {
-        this.top = null;
-        this.bottom = null;
-        this.length = 0;
+class LinkedList {
+    constructor(value) {
+        this.head = {
+            value: value,
+            next: null
+        };
+        this.tail = this.head;
+        this.length = 1;
     }
-    enqueue(value) {
-        const newNode = Node1(value);
-        if (this.top === null) {
-            this.top = newNode;
-            this.bottom = newNode;
-        } else {
-            this.top.next = newNode;
-            this.top = newNode;
-        }
+    addBack(value) {
+        const newNode = new Node(value);
+        this.tail.next = newNode;
+        this.tail = newNode;
         this.length++;
         return this;
     }
-    dequeue() {
-        if (this.top === null) {
-            return null;
-        }
-        if (this.top === this.bottom) {
-            this.bottom = null;
-        }
-        const holdingPointer = this.top;
-        this.top = this.top.next;
-        this.length--;
+    addFront(value) {
+        const newNode = new Node(value);
+        const holdingPointer = this.head;
+        this.head = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
         return this;
     }
-    peek() {
-        return this.top;
+    insert(index, value) {
+        const newNode = new Node(value);
+        const leader = this.traverseToIndex(index-1);
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    traverseToIndex(index) {
+        let counter = 0;
+        let currrentNode = this.head;
+        while (counter !== index) {
+            currrentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
+    print() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
     }
 }
-
-//one more practice
-
-class Node1 {
+class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
 
-class queue {
-    constructor() {
-        this.top = null;
-        this.bottom = null;
-        this.length = 0;
+class LinkedList {
+    constructor(value) {
+        this.head = {
+            value: value,
+            next: null
+        };
+        this.tail = this.head;
+        this.length = 1;
     }
-    enqueue(value) {
-        const newNode = Node1(value);
-        if (this.top === null) {
-            this.top = newNode;
-            this.bottom = newNode;
-        } else {
-            this.top.next = newNode;
-            this.top = newNode;
-        }
+    addBack(value) {
+        const newNode = new Node(value);
+        this.tail.next = newNode;
+        this.tail = newNode;
         this.length++;
         return this;
     }
-    dequeue() {
-        if (this.top === null) {
-            return null;
-        }
-        if (this.top === this.bottom) {
-            this.bottom = null;
-        }
-        const holdingPointer = this.top;
-        this.top = this.top.next;
-        this.length--;
+    addFront(value) {
+        const newNode = new Node(value);
+        const holdingPointer = this.head;
+        this.head = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
         return this;
     }
-    peek() {
-        return this.top;
+    insert(index, value) {
+        const newNode = new Node(value);
+        const leader = this.traverseToIndex(index-1);
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    traverseToIndex(index) {
+        let counter = 0;
+        let currrentNode = this.head;
+        while (counter !== index) {
+            currrentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
+    print() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
     }
 }
+//can't stop
