@@ -487,3 +487,43 @@ ll.addFront(61);
 ll.insert(2, 80);
 ll.remove(2);
 ll.print();
+
+//5.4.2020
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor(value) {
+    this.head = {
+      value: value,
+      next: null
+    };
+    this.tail = this.head;
+    this.length = 1;
+  }
+  print() {
+    let array = [];
+    let currentNode = this.head;
+    while (currentNode !== null) {
+      array.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    return array;
+  }
+  addBack(value) {
+    const newNode = new Node(value);
+    this.tail.next = newNode;
+    this.tail = newNode;
+    this.length++;
+    return this;
+  }
+}
+
+let ll = new LinkedList(50);
+ll.addBack(51);
+ll.print();
