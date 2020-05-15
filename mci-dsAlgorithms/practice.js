@@ -77,32 +77,22 @@ function filteredArray(arr, elem) {
   return newArr;
 }
 
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+//linkedlist practice
 
-function filteredArray(arr, elem) {
-  let newArr = [];
-  // Only change code below this line
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].indexOf(elem) == -1) {
-      newArr.push(arr[i]);
-    }
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
-  // Only change code above this line
-  return newArr;
 }
 
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
-
-function filteredArray(arr, elem) {
-  let newArr = [];
-  // Only change code below this line
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].indexOf(elem) == -1) {
-      newArr.push(arr[i]);
-    }
+class LinkedList {
+  constructor(value) {
+    this.head = {
+      value: value,
+      next: null
+    };
+    this.tail = this.head;
+    this.length = 1;
   }
-  // Only change code above this line
-  return newArr;
 }
-
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
