@@ -391,3 +391,42 @@ class Node {
       }
     }
   } //insert function
+
+  //starting here again
+
+  class Node {
+    constructor() {
+      this.value = value;
+      this.right = null;
+      this.left = null;
+    }
+  }
+
+  class BST {
+    constructor(value) {
+      this.root = null;
+    }
+    insert(value) {
+      const newNode = new Node(Value);
+      if (this.root === null) {
+        this.root = newNode;
+      } else {
+        let currentNode = this.root;
+        while (true) {
+          if (value < currentNode.value) {
+            if (!currentNode.left) {
+              currentNode.left = newNode;
+              return this;
+            }
+            currentNode = currentNode.left;
+          } else {
+            if (!currentNode.right) {
+              currentNode.right = newNode;
+              return this;
+            }
+            currentNode = currentNode.right;
+          }
+        }
+      }
+    }
+  } //insert function
