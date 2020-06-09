@@ -563,3 +563,24 @@ ll.addFront(40);
 ll.addBack(60);
 ll.insert(1, 52);
 ll.print();
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor(value) {
+    this.head = {
+      value: value,
+      next: null
+    };
+    this.tail = this.head;
+    this.length = 1;
+  }
+}
+
+let ll = new LinkedList(50);
+ll
