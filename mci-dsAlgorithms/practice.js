@@ -587,6 +587,14 @@ class LinkedList {
     this.length++;
     return this;
   }
+  addFront(value) {
+    const newNode = new Node(value);
+    const holdingPointer = this.head;
+    this.head = newNode;
+    newNode.next = holdingPointer
+    this.length++;
+    return this;
+  }
 }
 
 let ll = new LinkedList(50);
