@@ -595,6 +595,20 @@ class LinkedList {
     this.length++;
     return this;
   }
+  insert(index, value) {
+    const newNode = new Node(value);
+    //TBA
+    return this;
+  }
+  traverseToIndex(index) {
+    let counter = 0;
+    let currentNode = this.head;
+    while (counter !== index) {
+      currentNode = currentNode.next;
+      counter++;
+    }
+    return currentNode;
+  }
 }
 
 let ll = new LinkedList(50);
