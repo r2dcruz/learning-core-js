@@ -597,7 +597,11 @@ class LinkedList {
   }
   insert(index, value) {
     const newNode = new Node(value);
-    //TBA
+    const leader = this.traverseToIndex(index-1);
+    const holdingPointer = leader.next;
+    leader.next = newNode;
+    newNode.next = holdingPointer;
+    this.length++;
     return this;
   }
   traverseToIndex(index) {
