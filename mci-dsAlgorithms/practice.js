@@ -618,11 +618,7 @@ class LinkedList {
 let ll = new LinkedList(50);
 ll
 
-<<<<<<< HEAD
-=======
-//doing another scratch practice
 
->>>>>>> 8850386c83e10cfec5e4115df5f01aea69becb37
 class Node {
   constructor(value) {
     this.value = value;
@@ -635,11 +631,7 @@ class LinkedList {
     this.head = {
       value: value,
       next: null
-<<<<<<< HEAD
     };
-=======
-    }
->>>>>>> 8850386c83e10cfec5e4115df5f01aea69becb37
     this.tail = this.head;
     this.length = 1;
   }
@@ -654,7 +646,6 @@ class LinkedList {
     const newNode = new Node(value);
     const holdingPointer = this.head;
     this.head = newNode;
-<<<<<<< HEAD
     newNode.next = holdingPointer
     this.length++;
     return this;
@@ -664,13 +655,10 @@ class LinkedList {
     const leader = this.traverseToIndex(index-1);
     const holdingPointer = leader.next;
     leader.next = newNode;
-=======
->>>>>>> 8850386c83e10cfec5e4115df5f01aea69becb37
     newNode.next = holdingPointer;
     this.length++;
     return this;
   }
-<<<<<<< HEAD
   traverseToIndex(index) {
     let counter = 0;
     let currentNode = this.head;
@@ -684,20 +672,3 @@ class LinkedList {
 
 let ll = new LinkedList(50);
 ll
-=======
-  print() {
-    let array = [];
-    let currentNode = this.head;
-    while (currentNode !== null) {
-      array.push(currentNode.value);
-      currentNode = currentNode.next;
-    }
-    return array;
-  }
-}
-
-let ll = new LinkedList(66);
-ll.addBack(67);
-ll.addFront(60);
-ll.print();
->>>>>>> 8850386c83e10cfec5e4115df5f01aea69becb37
