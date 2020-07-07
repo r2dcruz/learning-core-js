@@ -380,17 +380,25 @@ class Queue {
   }
 }
 
+<<<<<<< HEAD
 //practicing queues again
 
 class Node {
   constructor(value) {
       this.value = value;
       this.next = null;
+=======
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+>>>>>>> a337b8390e98b3d6134b1af821a06bdcaba8172d
   }
 }
 
 class Queue {
   constructor() {
+<<<<<<< HEAD
       this.first = null;
       this.last = null;
       this.length = 0;
@@ -409,6 +417,46 @@ class Queue {
       }
       this.length++;
       return this;
+=======
+    this.first = null;
+    this.last = null;
+    this.length = 0;
+  }
+  enqueue(value) {
+    const newNode = newNode;
+    if (this.length === 0) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+    this.length++;
+    return this;
+  }
+  enqueue(value) {
+    const newNode = newNode;
+    if (this.length === 0) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+    this.length++;
+    return this;
+  }
+  dequeue() {
+    if (!this.first) {
+      return null;
+    }
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    this.first = this.first.next;
+    this.length--;
+    return this;
+>>>>>>> a337b8390e98b3d6134b1af821a06bdcaba8172d
   }
   dequeue() {
     if (!this.first) {
@@ -421,4 +469,23 @@ class Queue {
     this.length--;
     return this;
   }
+<<<<<<< HEAD
 }
+=======
+  peek() {
+    return this.first;
+  }
+  enqueue(value) {
+    const newNode = new Node(value);
+    if (this.length === 0) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    } 
+    this.length++;
+    return this;
+  }
+}
+>>>>>>> a337b8390e98b3d6134b1af821a06bdcaba8172d
