@@ -664,6 +664,7 @@ myLinkedList.append("remove");
 myLinkedList.printList();
 
 class Node {
+<<<<<<< HEAD
   constructor(value) {
     this.value = value;
     this.next = null;
@@ -739,4 +740,46 @@ class Queue {
   }
 }
 
+=======
+    constructor (value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+>>>>>>> 71f162f5e3b734e30a057ba87c2b037730a42048
 
+class Stack {
+    constructor() {
+        this.top = null;
+        this.bottom = null;
+        this.length = 0;
+    }
+    peek() {
+      return this.top;
+    }
+    push(value) {
+      const newNode = new Node(value);
+      if (this.length === 0) {
+        this.top = newNode;
+        this.bottom = newNode;
+      } else {
+        const holdingPointer = this.top;
+        this.top = newNode;
+        this.top.next = holdingPointer;
+      }
+      this.length++;
+      return this;
+    }
+    pop() {
+      if (!this.top) {
+        return null;
+      }
+      if (this.top === this.bottom) {
+        this.bottom = null;
+      }
+      const holdingPointer = this.top //temp hold if we still want this value
+      this.top = this.top.next;
+      this.length--;
+      return this;
+    }
+}
