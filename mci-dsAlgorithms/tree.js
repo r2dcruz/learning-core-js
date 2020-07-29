@@ -430,3 +430,30 @@ class Node {
       }
     }
   } //insert function 
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.right = null;
+    this.left = null;
+  }
+}
+
+class BST {
+  constructor(value) {
+    this.root = value;
+  }
+  insert(value) {
+    const newNode = new Node(value);
+    let root = this.root;
+    if (root === null) {
+      root = newNode;
+    } else {
+      let currentNode = this.root;
+    }
+  }
+}
+
+let ll = new BST(12);
+
+//this is what i remembered smh
