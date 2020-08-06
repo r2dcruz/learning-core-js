@@ -783,7 +783,6 @@ class LinkedList {
   }
 }
 
-<<<<<<< HEAD
 class Node {
   constructor() {
     this.value = value;
@@ -859,53 +858,44 @@ class BST {
     }
   }
 } //insert function 
-=======
-//this is definetely the best code that i remember like breathing
+
 
 class Node {
-  constructor(value) {
+  constructor() {
     this.value = value;
-    this.next = null;
+    this.right = null;
+    this.left = null;
   }
 }
 
-class LinkedList {
+class BST {
   constructor(value) {
-    this.head = {
-      value: value,
-      next: null
-    };
-    this.tail = this.head;
-    this.length = 1;
+    this.root = null;
   }
-  addBack(value) {
-    const newNode = new Node(value);
-    this.tail.next = newNode;
-    this.tail = newNode;
-    this.length++;
-    return this;
-  }
-  addFront(value) {
-    const newNode = new Node(value);
-    const holdingPointer = this.head;
-    this.head = newNode;
-    newNode.next = holdingPointer;
-    this.length++;
-    return this;
-  }
-  print() {
-    let currentNode = this.head;
-    let array = [];
-    while (currentNode !== null) {
-      array.push(currentNode.value);
-      currentNode = currentNode.next;
+  insert(value) {
+    const newNode = new Node(Value);
+    if (this.root === null) {
+      this.root = newNode;
+    } else {
+      let currentNode = this.root;
+      while (true) {
+        if (value < currentNode.value) {
+          if (!currentNode.left) {
+            currentNode.left = newNode;
+            return this;
+          }
+          currentNode = currentNode.left;
+        } else {
+          if (!currentNode.right) {
+            currentNode.right = newNode;
+            return this;
+          }
+          currentNode = currentNode.right;
+        }
+      }
     }
-    return array;
   }
-}
+} //insert function 
 
-let ll = new LinkedList(55)
-ll.addBack(56)
-ll.addFront(40);
-ll.print();
->>>>>>> 41d59f16d9f0ec61bcaa9d60e7f79a7243f413ed
+//leaving my BST practice here, and starting my react courses again. Need to do something different and then i'll back!
+
