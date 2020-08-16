@@ -898,4 +898,3 @@ class BST {
 } //insert function 
 
 //leaving my BST practice here, and starting my react courses again. Need to do something different and then i'll back!
-
