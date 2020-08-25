@@ -65,3 +65,25 @@ while playerhp > 30:
   if playerhp == 30:
     print("you have died. You cannot respawn, as you are dead.")
     break
+
+####
+
+player1 = 20
+player2 = 30
+player3 = 40
+
+while playerhp > 30:
+  dmg = random.randrange(enemyatkl, enemyatkh)
+  playerhp = playerhp - dmg
+
+  if playerhp <= 30:
+    playerhp = 30
+
+  print("enemy strikes for ", dmg, " points of damage. Current HP is", playerhp)
+
+  if playerhp == 30:
+    print("you have died. You cannot respawn, as you are dead.")
+    break
+
+  # 1 week hiatus, and thinking about going to get degree...
+
