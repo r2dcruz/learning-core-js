@@ -919,11 +919,78 @@ class LinkedList {
 
 //5-minute practice
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//   cout << "Hello World!\n";
+// }
+
+//adding c++
+
+//Switch cases
+#include <iostream>
+using namespace std;
+
+enum EyeColor {Brown, Black, Red, Green, Gray};
+
+int main() {
+  EyeColor eyeColor = Brown;
+
+  switch (eyeColor) {
+    case Brown: cout << "brown"; break;
+    case Black: cout << "black"; break;
+    case Red: cout << "red"; break;
+    case Green: cout << "green"; break;
+    case Gray: cout << "gray"; break;
+    default: cout << "Not Valid";
+  }
+}
+
+//loop, used when you want to execute the same code multiple times or as long as a certain condition is true
+
+int main() {
+  cout << "WHILE:\n";
+  int counter = 1;
+  while (counter <= 10) {
+    cout << counter << endl;
+  }
+}
+
 #include <iostream>
 using namespace std;
 
 int main() {
-  cout << "Hello World!\n";
+  //loop practice
+  //doesn't have to execute if condition is false
+
+  cout << "WHILE:\n";
+  int counter = 11;
+  while (counter <= 10) {
+    cout << counter << endl;
+    counter++;
+  }
+
+  //always execute once
+
+  cout << "DO-WHILE:\n";
+  int dowhileCounter = 11;
+  do {
+    cout << dowhileCounter << endl;
+    dowhileCounter++;
+  } while (dowhileCounter <= 10);
+
+}
+//remembering for loops
+
+int main() 
+{
+  string animals[5] = {"cat", "dog", "cow", "goat", "bee"};
+  for (int i =0; i < 5; i++) {
+    cout << animals[i] << endl;
+  }
 }
 
-//adding c++
+//functions - is a block of code that is organize and group together to perform a specific task
+
+//dividing code into functions make it reusable, easier to read and maintain
