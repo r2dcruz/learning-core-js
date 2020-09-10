@@ -992,5 +992,44 @@ int main()
 }
 
 //functions - is a block of code that is organize and group together to perform a specific task
-
 //dividing code into functions make it reusable, easier to read and maintain
+
+//Creating function blocks
+//function declation
+float sum (float a, float b); //function returns value
+void introduceMe(string name, int age); //function doesn't return a value
+int main() 
+{
+  cout << sum(2.2, 5) << endl;
+  introduceMe("Anna", 45);
+  
+}
+
+//function definition
+float sum(float a, float b) {
+  return a + b;
+}
+
+void introduceMe (string name, int age) {
+  cout << "My name is " << name << endl;
+  cout << "I am " << age << endl;
+}
+
+//****************** another example of empty function
+
+#include <iostream>
+using namespace std;
+
+void creditList(string name, int age);
+
+int main() {
+  creditList("Allison", 99);
+}
+
+void creditList(string name, int age) {
+  cout << "my name is " << name << endl;
+  cout << "my age is " << age << endl;
+}
+
+//**************************
+
