@@ -71,7 +71,7 @@ class Queue {
     this.length = 0;
   }
   enqueue(value) {
-    const newNode = newNode;
+    const newNode = new Node;
     if (this.length === 0) {
       this.first = newNode;
       this.last = newNode;
@@ -80,29 +80,6 @@ class Queue {
       this.last = newNode;
     }
     this.length++;
-    return this;
-  }
-  enqueue(value) {
-    const newNode = newNode;
-    if (this.length === 0) {
-      this.first = newNode;
-      this.last = newNode;
-    } else {
-      this.last.next = newNode;
-      this.last = newNode;
-    }
-    this.length++;
-    return this;
-  }
-  dequeue() {
-    if (!this.first) {
-      return null;
-    }
-    if (this.first === this.last) {
-      this.last = null;
-    }
-    this.first = this.first.next;
-    this.length--;
     return this;
   }
   dequeue() {
@@ -118,17 +95,5 @@ class Queue {
   }
   peek() {
     return this.first;
-  }
-  enqueue(value) {
-    const newNode = new Node(value);
-    if (this.length === 0) {
-      this.first = newNode;
-      this.last = newNode;
-    } else {
-      this.last.next = newNode;
-      this.last = newNode;
-    } 
-    this.length++;
-    return this;
   }
 }
