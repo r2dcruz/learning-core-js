@@ -124,6 +124,17 @@ class Queue {
     this.length++;
     return this;
   }
+  dequeue() {
+    if (!this.first) {
+      return null;
+    }
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    const holdingPointer = this.first;
+    this.first = this.first.next;
+    this.length--;
+  }
 }
 
 let qu = new Queue();
@@ -156,6 +167,17 @@ class Queue {
     }
     this.length++;
     return this;
+  }
+  dequeue() {
+    if (!this.first) {
+      return null;
+    }
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    const holdingPointer = this.first;
+    this.first = this.first.next;
+    this.length--;
   }
 }
 
