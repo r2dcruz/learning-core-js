@@ -1063,3 +1063,25 @@ ll.prepend(1);
 ll.insert(1,99);
 //ll.remove();
 ll.print();
+
+//first code for 2020
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor(value) {
+    this.head = {
+      value: value,
+      next: null
+    }
+    this.tail = this.head;
+  }
+}
+
+let ll = new LinkedList("google");
+ll
